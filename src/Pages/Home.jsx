@@ -14,16 +14,16 @@ const Home = () => {
     <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0 overflow-hidden">
       {/* Left vertical line */}
       <div className="absolute left-16 md:left-20 top-0 h-[78vh] w-[2px] bg-[#493b32]">
-        <span className="absolute -left-6 md:-left-9 top-[50rem] md:top-[52rem] -translate-y-1/2 rotate-[-90deg] text-sm md:text-xl text-[#493B32] font-tan">
+        <span className="absolute -left-6 md:-left-9 top-[88vh] md:top-[52rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
           2025
         </span>
       </div>
      
 
       {/* Right vertical line */}
-      <div className="absolute right-10 top-0 h-[65vh] w-[2px] bg-[#493b32]">
+      <div className="absolute right-10 top-0 h-[68vh] w-[2px] bg-[#493b32]">
         {/* Social links */}
-        <div className="absolute -right-3 top-[78vh] -translate-y-1/2 flex flex-col items-center justify-evenly gap-7 z-20 text-[#493b32]">
+        <div className="absolute -right-3 top-[82vh] -translate-y-1/2 flex flex-col items-center justify-evenly gap-7 z-20 text-[#493b32]">
           <a
             href="https://linkedin.com"
             target="_blank"
@@ -70,6 +70,7 @@ const Home = () => {
             {/* Arrow*/}
             <div className="hidden lg:flex justify-end mt-20">
               <IoIosArrowDropdownCircle 
+                size={48}
                 color="#5E3F27" 
                 className="animate-bounce cursor-pointer hover:opacity-80 transition-opacity"
                 onClick={() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}
@@ -77,9 +78,6 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="bg-red-500 text-white text-center py-2">
-  THIS IS THE LIVE VERSION
-</div>
           {/* Image and mobile arrow section */}
           <div className="col-span-4 md:col-span-6 lg:col-span-12 lg:col-start-2 flex flex-row items-center justify-center lg:justify-start gap-4">
             <div className="relative max-w-[300px] mr-10 md:max-w-[300px] lg:max-w-[400px] md:mr-100">
@@ -90,8 +88,8 @@ const Home = () => {
               />
             </div>
             {/* Arrow - visible only on mobile/tablet */}
-            <div className="flex lg:hidden items-center mt-[-200px] lg:mt-[-100px]">
-              <IoIosArrowDropdownCircle size={64} color="#5E3F27" className="animate-bounce" />
+            <div className="flex lg:hidden items-center mt-[-200px] mr-10 sm:mr-0 lg:mt-[-100px]">
+              <IoIosArrowDropdownCircle size={32} color="#5E3F27" className="animate-bounce" />
             </div>
           </div>
         </div>
