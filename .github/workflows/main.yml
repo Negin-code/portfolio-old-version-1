@@ -1,35 +1,28 @@
-name: 🚀 Deploy React App via FTP
-
-on:
+on: 
   push:
-    branches:
-      - main
-
+    branches: [ deploy ]
+name: 🚀 Deploy website on push
 jobs:
-  deploy:
+  web-deploy:
+    name: 🚀 Deploy React
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Get latest code
+        uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v2
         with:
           node-version: '20'
-
-      - name: Build the app
+      - name: ⛏️Build Project
         run: |
-          mkdir -p task-2 # Ensure the directory exists
           cd task-2
           npm install
           npm run build
-
-      - name: Upload via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: 📁 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
+          username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: task-2/dist
-          server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          local-dir: "task-2/dist/"
+          server-dir: "public_html/"
