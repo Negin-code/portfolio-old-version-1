@@ -26,7 +26,7 @@ const Header = () => {
             <img src={logo} alt="Logo" className="h-20 md:h-30" />
           </Link>
           {/* Horizontal Line Separator */}
-          <div className=" w-[60vw] lg:w-[60vw] border-t border-1 border-[#5a3e2b]"></div>
+          <div className=" w-[62vw] border-t border-1 border-[#5a3e2b]"></div>
         </div>
 
         {/* Desktop Navigation - Only visible on lg screens and up */}
