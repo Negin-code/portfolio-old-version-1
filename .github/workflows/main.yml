@@ -1,5 +1,4 @@
-on: 
-  workflow_dispatch:
+on:
   push:
     branches: [ deploy ]
 name: 🚀 Deploy website on push
