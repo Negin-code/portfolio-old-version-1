@@ -11,7 +11,7 @@ import crimsonPlate from "../assets/CrimsonPlate.png";
 
 const Home = () => {
   return (
-    <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0">
+    <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0 overflow-hidden">
       {/* Left vertical line */}
       <div className="absolute left-16 md:left-20 top-0 h-[78vh] w-[2px] bg-[#493b32]">
         <span className="absolute -left-6 md:-left-9 top-[83vh] sm:top-[83vh] -translate-y-1/2 rotate-[-90deg] text-sm md:text-xl text-[#493B32] font-tan">
