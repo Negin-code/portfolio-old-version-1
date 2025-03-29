@@ -6,8 +6,8 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 
-import profileImage from "./asset/profileF.png";
-import crimsonPlate from "./asset/CrimsonPlate.png";
+import profileImage from "../assets/profileF.png";
+import crimsonPlate from "../assets/CrimsonPlate.png";
 
 const Home = () => {
   return (
