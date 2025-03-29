@@ -14,7 +14,7 @@ const Home = () => {
     <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0 overflow-hidden">
       {/* Left vertical line */}
       <div className="absolute left-16 md:left-20 top-0 h-[78vh] w-[2px] bg-[#493b32]">
-        <span className="absolute -left-6 md:-left-9 top-[83vh] sm:top-[83vh] -translate-y-1/2 rotate-[-90deg] text-sm md:text-xl text-[#493B32] font-tan">
+        <span className="absolute -left-6 md:-left-9 top-[50rem] md:top-[52rem] -translate-y-1/2 rotate-[-90deg] text-sm md:text-xl text-[#493B32] font-tan">
           2025
         </span>
       </div>
@@ -53,7 +53,7 @@ const Home = () => {
       <section className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
         {/* Title section - full width */}
         <div className="col-span-4 md:col-span-6 lg:col-span-11 text-right mt-20 mr-15 lg:mr-0">
-          <h1 className="font-tan text-[2.2rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[7rem] xl:text-[10rem] leading-tight">
+          <h1 className="font-tan text-[2.3rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[7rem] xl:text-[10rem] leading-tight">
             Hi, I'm Negin
           </h1>
         </div>
@@ -80,11 +80,11 @@ const Home = () => {
 
           {/* Image and mobile arrow section */}
           <div className="col-span-4 md:col-span-6 lg:col-span-12 lg:col-start-2 flex flex-row items-center justify-center lg:justify-start gap-4">
-            <div className="relative max-w-[270px] mr-10 md:max-w-[300px] lg:max-w-[400px] md:mr-100">
+            <div className="relative max-w-[300px] mr-10 md:max-w-[300px] lg:max-w-[400px] md:mr-100">
               <img
                 src={profileImage}
                 alt="Negin's Profile Picture"
-                className="w-full h-auto object-contain mt-0 ml-20 sm:mt-4 lmd:mt-6 lg:mt-8 ml-4 sm:ml-0"
+                className="w-full h-auto object-cover mt-60 ml-20 sm:mt-4 lmd:mt-6 lg:mt-8 ml-4 sm:ml-0"
               />
             </div>
             {/* Arrow - visible only on mobile/tablet */}
