@@ -29,8 +29,8 @@ const Header = () => {
           <div className=" w-[60vw] lg:w-[60vw] border-t border-1 border-[#5a3e2b]"></div>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex justify-center space-x-15 w-full">
+        {/* Desktop Navigation - Only visible on lg screens and up */}
+        <nav className="hidden lg:flex justify-center space-x-15 w-full">
           
         <Link
               to="/"
@@ -55,8 +55,8 @@ const Header = () => {
           
         </nav>
 
-        {/* Mobile Navigation */}
-        <div className="md:hidden">
+        {/* Mobile and Tablet Navigation - Visible on mobile and md screens */}
+        <div className="lg:hidden">
           <Menu 
             right
             isOpen={isMenuOpen}
