@@ -77,7 +77,9 @@ const Home = () => {
               />
             </div>
           </div>
-
+          <div className="bg-red-500 text-white text-center py-2">
+  THIS IS THE LIVE VERSION
+</div>
           {/* Image and mobile arrow section */}
           <div className="col-span-4 md:col-span-6 lg:col-span-12 lg:col-start-2 flex flex-row items-center justify-center lg:justify-start gap-4">
             <div className="relative max-w-[300px] mr-10 md:max-w-[300px] lg:max-w-[400px] md:mr-100">
