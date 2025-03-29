@@ -84,7 +84,7 @@ const Home = () => {
               <img
                 src={profileImage}
                 alt="Negin's Profile Picture"
-                className="w-full h-auto object-cover mt-0 ml-20 sm:ml-0 lg:mt-[-300px] lg:ml-[120px]"
+                className="w-full h-auto object-contain mt-0 ml-20 sm:mt-4 lmd:mt-6 lg:mt-8 ml-4 sm:ml-0"
               />
             </div>
             {/* Arrow - visible only on mobile/tablet */}
