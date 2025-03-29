@@ -18,9 +18,7 @@ const Home = () => {
           2025
         </span>
       </div>
-      <div className="bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500 2xl:bg-purple-500">
-  Resize me!
-</div>
+     
 
       {/* Right vertical line */}
       <div className="absolute right-10 top-0 h-[70vh] w-[3px] bg-[#493b32]">
@@ -96,9 +94,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        
         {/* About Section */}
         <section className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 col-span-full bg-[#493B32] py-16 px-10 lg:px-0 mt-[-10px] lg:mt-[-40px] w-[100vw] z-10">
+          
           {/* Title on the Left */}
           <div className="col-span-4 md:col-span-2 lg:col-span-2 col-start-1 lg:col-start-2 flex items-center justify-start lg:justify-start lg:items-start gap-2 text-left">
             <div className="w-[5vh] lg:w-[9vh] h-[2px] bg-[#FFF7F2] mt-2 "></div>
@@ -116,7 +115,9 @@ const Home = () => {
               creativity, empathy, and technical skills to build solutions that
               are not only visually appealing but also intuitive and accessible.
             </p>
+            
           </div>
+          
         </section> 
 
         {/* Projects Section */}
