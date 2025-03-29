@@ -61,17 +61,18 @@ const Home = () => {
         {/* Image and subtitle container */}
         <div className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-5 mt-4 mr-15 lg:mr-0 lg:mt-8">
           {/* Subtitle section */}
-          <div className="col-span-4 md:col-span-6 lg:col-span-5 lg:col-start-7 flex flex-col justify-center text-right">
+          <div className="col-span-4 md:col-span-6 lg:col-span-5 lg:col-start-7 flex flex-col justify-center text-right mt-0">
             <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl text-[#493B32] font-open">
               A Designer & Developer <br />
               Crafting User-Centric <br />
               Experiences!
             </h2>
-            {/* Arrow - visible only on large screens */}
-            <div className="hidden lg:flex justify-end mt-8">
+            {/* Arrow*/}
+            <div className="hidden lg:flex justify-end mt-20">
               <IoIosArrowDropdownCircle 
                 color="#5E3F27" 
-                className="animate-bounce cursor-pointer hover:opacity-80 transition-opacity w-5 h-5 sm:w-12 sm:h-8 md:w-16 md:h-16"
+                className="animate-bounce cursor-pointer hover:opacity-80 transition-opacity w-5 h-5 sm:w-12 sm:h-12
+                 md:w-12 md:h-12 lg:w-16 lg:h-16"
                 onClick={() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}
                 aria-label="Scroll to bottom"
               />
