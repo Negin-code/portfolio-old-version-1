@@ -15,7 +15,6 @@ jobs:
           node-version: '20'
       - name: ⛏️Build Project
         run: |
-          cd task-2
           npm install
           npm run build
       - name: 📁 Sync files
@@ -24,5 +23,5 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "task-2/dist/"
+          local-dir: "dist/"
           server-dir: "public_html/"

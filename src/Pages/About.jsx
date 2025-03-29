@@ -8,6 +8,7 @@ import NeginImage2 from "../assets/merchies.png";
 import NeginImage3 from "../assets/malahat.png";
 import NeginImage4 from "../assets/malahat.png";
 import NeginImage5 from "../assets/malahat.png";
+// Trigger test
 
 const About = () => {
   const [activeIndex, setActiveIndex] = useState(0);
