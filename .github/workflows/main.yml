@@ -15,7 +15,6 @@ jobs:
           node-version: '20'
       - name: ⛏️Build Project
         run: |
-          mkdir -p task-2
           cd task-2
           npm install
           npm run build
