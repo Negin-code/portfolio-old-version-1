@@ -15,7 +15,6 @@ jobs:
           node-version: '20'
       - name: ⛏️Build Project
         run: |
-          cd task-2
           npm install
           npm run build
       - name: 📁 Sync files
