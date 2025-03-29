@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Federo&family=Italiana&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'TanMonCheri';
+  src: url('./assets/font/tan-mon-cheri.ttf') format('truetype');
+  
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .font-tan {
+    font-family: 'TanMonCheri', sans-serif;
+  }
+  .font-open {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Page Styles */
+.home-page,
+.about-page,
+.projects-page,
+.contact-page {
+  padding: 2rem 0;
+}
+
+h1 {
+  /* font-size: 2.5rem; */
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-tags span {
+  background-color: #f0f0f0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Contact Page */
+.contact-email {
+  margin: 2rem 0;
+}
+
+.contact-email a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.2rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-email a:hover {
+  color: #666;
+  border-color: #666;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* .social-links a {
+  font-size: 1.8rem;
+  color: #333;
+  transition: color 0.3s ease;
+} */
+
+/* .social-links a:hover {
+  color: #666;
+} */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
