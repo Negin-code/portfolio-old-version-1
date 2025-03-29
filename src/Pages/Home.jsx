@@ -8,6 +8,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
 
 import profileImage from "../assets/profileF.png";
 import crimsonPlate from "../assets/CrimsonPlate.png";
+import alzcare from "../assets/Alzcare.svg";
 
 const Home = () => {
   return (
@@ -169,33 +170,27 @@ const Home = () => {
             {/* Project 2 */}
             <div className="bg-[#FFF7F2] p-6 flex flex-col">
               <img
-                src={crimsonPlate}
-                alt="Crimson Plate Website"
-                className="w-full h-auto mb-2 mt-2"
+                src={alzcare}
+                alt="Alzcare App"
+                className="w-full h-auto lg:w-[450px] lg:h-[400px] mb-2 mt-2"
               />
               <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
-                Front-end
+                UX/UI Design
               </span>
               <div className="w-full h-[1px] bg-[#493B32]"></div>
               <h3 className="text-2xl font-semibold mt-4 text-left">
-                Crimson Plate Website
+                Alzcare App
               </h3>
               <p className="text-md mt-2 text-left">
-                The goal was to create a responsive, visually engaging, and
-                user-friendly restaurant website that delivers an intuitive,
-                interactive digital experience while accurately reflecting the
-                restaurant's brand.
+              The goal of AlzCare is to create a user-friendly mobile app that integrates with a smart medication container, helping caregivers monitor medication adherence for individuals with Alzheimer’s.
               </p>
               <div className="w-full h-[1px] bg-[#493B32] mb-[20px] lg:mb-[36px] lg:mt-[36px] mt-[20px]"></div>
               <div className="flex flex-wrap gap-2 lg:mt-4 mt-0">
                 <span className="border border-[#493B32] px-3 py-1 text-base">
-                  HTML
+                  Figma
                 </span>
                 <span className="border border-[#493B32] px-3 py-1 text-base">
-                  Tailwind CSS
-                </span>
-                <span className="border border-[#493B32] px-3 py-1 text-base">
-                  JavaScript
+                  Illustrator
                 </span>
               </div>
               <div className="w-full h-[1px] bg-[#493B32] lg:mt-[36px] mt-[20px]"></div>
