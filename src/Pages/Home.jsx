@@ -18,6 +18,9 @@ const Home = () => {
           2025
         </span>
       </div>
+      <div className="bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500 2xl:bg-purple-500">
+  Resize me!
+</div>
 
       {/* Right vertical line */}
       <div className="absolute right-10 top-0 h-[70vh] w-[3px] bg-[#493b32]">
