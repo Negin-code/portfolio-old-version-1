@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0">
       {/* Left vertical line */}
-      <div className="absolute left-17 md:left-20 top-0 h-[78vh]  w-[2px] bg-[#493b32]">
+      <div className="absolute left-16 md:left-20 top-0 h-[78vh] w-[2px] bg-[#493b32]">
         <span className="absolute -left-6 md:-left-9 top-[83vh] sm:top-[83vh] -translate-y-1/2 rotate-[-90deg] text-sm md:text-xl text-[#493B32] font-tan">
           2025
         </span>
@@ -62,7 +62,7 @@ const Home = () => {
         <div className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-5 mt-8 mr-15 lg:mr-0">
           {/* Subtitle section */}
           <div className="col-span-4 md:col-span-6 lg:col-span-5 lg:col-start-7 flex flex-col justify-center text-right">
-            <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-[#493B32] font-open">
+            <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl text-[#493B32] font-open">
               A Designer & Developer <br />
               Crafting User-Centric <br />
               Experiences!
@@ -71,7 +71,7 @@ const Home = () => {
             <div className="hidden lg:flex justify-end mt-8">
               <IoIosArrowDropdownCircle 
                 color="#5E3F27" 
-                className="animate-bounce cursor-pointer hover:opacity-80 transition-opacity w-5 h-5 sm:w-12 sm:h-12 md:w-16 md:h-16"
+                className="animate-bounce cursor-pointer hover:opacity-80 transition-opacity w-5 h-5 sm:w-12 sm:h-8 md:w-16 md:h-16"
                 onClick={() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}
                 aria-label="Scroll to bottom"
               />
