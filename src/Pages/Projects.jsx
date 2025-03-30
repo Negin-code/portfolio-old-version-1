@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import CrimsonPlateImage from "../assets/CrimsonPlate.png";
-
+import AlzcareImage from "../assets/Alzcare.svg";
 const Projects = () => {
   return (
-    <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative">
+    <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative">
       {/* Left vertical line */}
       <div className="absolute left-17 md:left-20 top-0 bottom-8 h-[calc(100%-5rem)] w-[2px] bg-[#493b32]"></div>
 
@@ -61,6 +61,14 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full h-[1px] bg-[#493B32] mt-[15px]"></div>
+            
+            {/* View Project Button */}
+            <Link
+              to="/projects/crimson-plate"
+              className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
+            >
+              View Project
+            </Link>
           </div>
         </div>
 
@@ -91,10 +99,18 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full h-[1px] bg-[#493B32] mt-[15px]"></div>
+            
+            {/* View Project Button */}
+            <Link
+              to="/projects/alzcare"
+              className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
+            >
+              View Project
+            </Link>
           </div>
           <div className="col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-3 md:order-2">
             <img
-              src={CrimsonPlateImage}
+              src={AlzcareImage}
               alt="AlzCare App"
               className="w-full object-cover lg:scale-110 scale-90"
             />
@@ -142,6 +158,14 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full h-[1px] bg-[#493B32] mt-[15px]"></div>
+            
+            {/* View Project Button */}
+            <Link
+              to="/projects/listening-lab"
+              className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
+            >
+              View Project
+            </Link>
           </div>
         </div>
 
@@ -172,6 +196,14 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full h-[1px] bg-[#493B32] mt-[15px]"></div>
+            
+            {/* View Project Button */}
+            <Link
+              to="/projects/culture-cafe"
+              className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
+            >
+              View Project
+            </Link>
           </div>
           <div className="col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-7 md:order-2">
             <img
@@ -193,7 +225,7 @@ const Projects = () => {
         </div>
         <div>
           <IoIosArrowDropupCircle
-            size={48}
+            size={40}
             color="#493B32"
             className="mx-20 my-10 mb-10 lg:mx-10 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
