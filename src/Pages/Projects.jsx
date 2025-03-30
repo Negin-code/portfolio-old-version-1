@@ -6,7 +6,7 @@ import CrimsonPlateImage from "../assets/CrimsonPlate.png";
 import AlzcareImage from "../assets/Alzcare.svg";
 const Projects = () => {
   return (
-    <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative">
+    <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative overflow-hidden">
       {/* Left vertical line */}
       <div className="absolute left-17 md:left-20 top-0 bottom-8 h-[calc(100%-5rem)] w-[2px] bg-[#493b32]"></div>
 
@@ -14,25 +14,25 @@ const Projects = () => {
       <div className="absolute right-10 top-0 bottom-8 h-[calc(100%-5rem)] w-[2px] bg-[#493b32]"></div>
 
       {/* Projects Title */}
-      <div className="col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 flex flex-row items-start justify-start gap-1 mt-20 lg:mt-0 mb-0 pl-25">
-        <div className="w-[5vh] md:w-[9vh] h-[2px] bg-[#493B32] mt-2 lg:mt-4"></div>
-        <h1 className="text-2xl md:text-4xl lg:text-4xl font-tan text-[#493B32] pb-4">
+      <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 flex flex-row items-start justify-start gap-1 mt-20 lg:mt-0 mb-0 pl-25">
+        <div className="w-[5vh] sm:w-[5vh] md:w-[7vh] h-[2px] bg-[#493B32] mt-2 lg:mt-4"></div>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-tan text-[#493B32] pb-4">
           Projects
         </h1>
       </div>
      
       {/* Front End Section */}
-      <section className="col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 col-start-1 mb-12 pl-20 mt-0">
+      <section className="col-span-4 sm:col-span-4 sm:col-start-1 md:col-span-6 md:col-start-1 lg:col-span-10 lg:col-start-2 col-start-1 mb-12 pl-20 mt-0">
         {/* Project 1 - Image on left, content on right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
-          <div className="col-span-4 md:col-span-4 lg:col-span-7 lg:mt-4 order-1 md:order-1">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
+          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-7 lg:mt-4 order-1 md:order-1">
             <img
               src={CrimsonPlateImage}
               alt="Crimson Plate Website"
-              className="w-full object-cover scale-80"
+              className="w-full object-cover scale-80 md:scale-90 lg:scale-80  mx-5"
             />
           </div>
-          <div className="lg:col-start-9 lg:col-span-4 mt-10 md:mt-20 order-2 md:order-2 ml-10 lg:ml-0">
+          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-4 mt-10 md:mt-20 lg:mt-10 order-2 md:order-2 ml-10 lg:ml-0">
             <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Front-end
             </span>
@@ -73,8 +73,8 @@ const Projects = () => {
         </div>
 
         {/* Project 2 - Content on left, image on right (reversed on mobile) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
-          <div className="lg:col-start-2 lg:col-span-5 mt-10 md:mt-20 order-4 md:order-1 ml-10 lg:ml-0">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
+          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-7 lg:mt-4 lg:col-start-1 lg:col-span-4 mt-10 md:mt-20 order-4 md:order-1 ml-10 lg:ml-0">
             <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               UX/UI Design
             </span>
@@ -108,7 +108,7 @@ const Projects = () => {
               View Project
             </Link>
           </div>
-          <div className="col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-3 md:order-2">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-3 md:order-2">
             <img
               src={AlzcareImage}
               alt="AlzCare App"
@@ -216,7 +216,7 @@ const Projects = () => {
       </section>
 
       {/* Back to Resume Link */}
-      <div className="col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-8">
+      <div className=" col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-0">
         <div className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20">
           <IoIosArrowRoundBack size={48} color="#493B32" className="my-4" />
           <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">
