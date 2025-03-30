@@ -14,17 +14,17 @@ const Home = () => {
   return (
     <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0 overflow-hidden">
       {/* Left vertical line */}
-      <div className="absolute left-16 md:left-20 top-0 sm:h-[50rem] h-[38rem] w-[2px] bg-[#493b32]">
-        <span className="absolute -left-6 md:-left-9 top-[42rem] md:top-[55rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
+      <div className="absolute left-16 md:left-20 top-0 sm:h-[50rem] h-[38rem] md:h-[44rem] w-[2px] bg-[#493b32]">
+        <span className="absolute -left-6 md:-left-9 top-[42rem] sm:top-[55rem] md:top-[50rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
           2025
         </span>
       </div>
      
 
       {/* Right vertical line */}
-      <div className="absolute right-10 top-0 md:h-[44rem] h-[32rem] w-[2px] bg-[#493b32]">
+      <div className="absolute right-10 top-0 sm:h-[44rem] h-[32rem] md:h-[40rem] w-[2px] bg-[#493b32]">
         {/* Social links */}
-        <div className="absolute -right-3 md:top-[52rem] top-[40rem] -translate-y-1/2 flex flex-col items-center justify-evenly gap-7 z-20 text-[#493b32]">
+        <div className="absolute -right-3 sm:top-[52rem] top-[40rem] md:top-[48rem] -translate-y-1/2 flex flex-col items-center justify-evenly gap-7 z-20 text-[#493b32]">
           <a
             href="https://linkedin.com"
             target="_blank"
@@ -54,7 +54,7 @@ const Home = () => {
       <section className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
         {/* Title section - full width */}
         <div className="col-span-4 md:col-span-6 lg:col-span-11 text-right mt-20 mr-15 lg:mr-0">
-          <h1 className="font-tan text-[2.3rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[7rem] xl:text-[9rem] leading-tight">
+          <h1 className="font-tan text-[2.3rem] sm:text-[6rem] md:text-[8rem] xl:text-[12rem] leading-tight">
             Hi, I'm Negin
           </h1>
         </div>
@@ -63,7 +63,7 @@ const Home = () => {
         <div className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-5 mt-0 mr-15 lg:mr-0 lg:mt-8">
           {/* Subtitle section */}
           <div className="col-span-4 md:col-span-6 lg:col-span-5 lg:col-start-7 flex flex-col justify-center text-right">
-            <h2 className="text-lg sm:text-xl md:text-2xl text-[#493B32] font-open">
+            <h2 className="text-lg sm:text-xl md:text-2xl text-[#493B32] xl:text-3xl font-open">
               A Designer & Developer <br />
               Crafting User-Centric <br />
               Experiences!
@@ -81,11 +81,11 @@ const Home = () => {
           </div>
           {/* Image and mobile arrow section */}
           <div className="col-span-4 md:col-span-6 lg:col-span-12 lg:col-start-2 flex flex-row items-center justify-center lg:justify-start gap-4">
-            <div className="relative max-w-[300px] mr-10 md:max-w-[300px] lg:max-w-[400px] md:mr-100">
+            <div className="relative max-w-[300px] mr-10 md:max-w-[400px] md:mr-100">
               <img
                 src={profileImage}
                 alt="Negin's Profile Picture"
-                className="w-full h-auto  object-cover mt-30 ml-20 sm:mt-30   ml-4 sm:ml-0"
+                className="w-full h-auto object-cover mt-30 ml-20 sm:mt-30 md:mt-[-250px] xl:ml-[100px]  ml-4 sm:ml-0"
               />
             </div>
             {/* Arrow - visible only on mobile/tablet */}
