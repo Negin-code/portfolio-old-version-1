@@ -4,6 +4,9 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import CrimsonPlateImage from "../assets/CrimsonPlate.png";
 import AlzcareImage from "../assets/Alzcare.svg";
+
+
+
 const Projects = () => {
   return (
     <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative overflow-hidden">
@@ -32,7 +35,7 @@ const Projects = () => {
               className="w-full object-cover scale-80 md:scale-90 lg:scale-80  mx-5"
             />
           </div>
-          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-4 mt-10 md:mt-20 lg:mt-10 order-2 md:order-2 ml-10 lg:ml-0">
+          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-start-9 lg:col-span-4 mt-10 md:mt-20 order-6 md:order-2 ml-10 lg:ml-0">
             <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Front-end
             </span>
@@ -108,25 +111,25 @@ const Projects = () => {
               View Project
             </Link>
           </div>
-          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-3 md:order-2">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-1 lg:order-2">
             <img
               src={AlzcareImage}
               alt="AlzCare App"
-              className="w-full object-cover lg:scale-110 scale-90"
+              className="w-full object-cover lg:scale-100 scale-90"
             />
           </div>
         </div>
 
         {/* Project 3 - Image on left, content on right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
-          <div className="col-span-4 md:col-span-4 lg:col-span-7 lg:mt-4 order-5 md:order-1">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-7 lg:mt-4 order-5 md:order-1">
             <img
               src={CrimsonPlateImage}
               alt="Listening Lab"
               className="w-full object-cover scale-80"
             />
           </div>
-          <div className="lg:col-start-9 lg:col-span-4 mt-10 md:mt-20 order-6 md:order-2 ml-10 lg:ml-0">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-start-9 lg:col-span-4 mt-10 md:mt-20 order-6 md:order-2 ml-10 lg:ml-0">
             <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Service Design
             </span>
@@ -144,9 +147,6 @@ const Projects = () => {
             </p>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
             <div className="flex flex-wrap gap-2 mt-4 text-[#493B32]">
-              <span className="border border-[#493B32] px-3 py-1 text-base">
-                Figma
-              </span>
               <span className="border border-[#493B32] px-3 py-1 text-base">
                 Zoom
               </span>
@@ -170,8 +170,8 @@ const Projects = () => {
         </div>
 
         {/* Project 4 - Content on left, image on right (reversed on mobile) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4">
-          <div className="lg:col-start-2 lg:col-span-5 mt-10 md:mt-20 order-8 md:order-1 ml-10 lg:ml-0">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-start-1 lg:col-span-6 mt-10 md:mt-20 order-8 md:order-1 ml-10 lg:ml-0">
             <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Service Design
             </span>
@@ -205,11 +205,11 @@ const Projects = () => {
               View Project
             </Link>
           </div>
-          <div className="col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-7 md:order-2">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-7 md:order-2">
             <img
               src={CrimsonPlateImage}
               alt="Culture Café Program"
-              className="w-full object-cover lg:scale-110 scale-90"
+              className="w-full object-cover lg:scale-110 scale-90 lg:mt-20"
             />
           </div>
         </div>
