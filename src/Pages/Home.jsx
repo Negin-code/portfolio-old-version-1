@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <main className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0 overflow-hidden">
       {/* Left vertical line */}
-      <div className="absolute left-16 md:left-20 top-0 sm:h-[50rem] h-[38rem] md:h-[44rem] lg:h-[50rem] w-[2px] bg-[#493b32]">
-        <span className="absolute -left-6 md:-left-9 top-[42rem] sm:top-[55rem] md:top-[50rem] lg:top-[55rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
+      <div className="absolute left-16 md:left-20 top-0 sm:h-[40rem] h-[38rem] md:h-[40rem] lg:h-[50rem] w-[2px] bg-[#493b32]">
+        <span className="absolute -left-6 md:-left-9 top-[42rem] sm:top-[50rem] md:top-[50rem] lg:top-[55rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
           2025
         </span>
       </div>
