@@ -15,7 +15,7 @@ const Home = () => {
     <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 min-h-screen relative w-full pt-20 lg:pt-40 lg:px-0 overflow-hidden">
       {/* Left vertical line */}
       <div className="absolute left-16 md:left-20 top-0 sm:h-[40rem] h-[38rem] md:h-[40rem] lg:h-[40rem] xl:h-[50rem] w-[2px] bg-[#493b32]">
-        <span className="absolute -left-6 md:-left-9 top-[40rem] sm:top-[43rem] md:top-[45rem] lg:top-[45rem] xl:top-[55rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
+        <span className="absolute -left-6 md:-left-9 top-[40rem] sm:top-[43rem] md:top-[45rem] lg:top-[45rem] xl:top-[54rem] -translate-y-1/2 rotate-[-90deg] text-md md:text-xl text-[#493B32] font-tan">
           2025
         </span>
       </div>
@@ -24,7 +24,7 @@ const Home = () => {
       {/* Right vertical line */}
       <div className="absolute right-10 top-0 sm:h-[35rem] h-[30rem] md:h-[38rem] lg:h-[38rem] xl:h-[45rem] w-[2px] bg-[#493b32]">
         {/* Social links */}
-        <div className="absolute -right-3 sm:top-[42rem] top-[36rem] md:top-[45rem] lg:top-[45rem] xl:top-[52rem] -translate-y-1/2 flex flex-col items-center justify-evenly gap-7 z-20 text-[#493b32]">
+        <div className="absolute -right-3 sm:top-[42rem] top-[36rem] md:top-[42rem] lg:top-[45rem] xl:top-[50rem] -translate-y-1/2 flex flex-col items-center justify-evenly gap-7 z-20 text-[#493b32]">
           <a
             href="https://linkedin.com"
             target="_blank"
@@ -54,13 +54,13 @@ const Home = () => {
       <section className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
         {/* Title section - full width */}
         <div className="col-span-4 md:col-span-6 lg:col-span-11 text-right mt-20 mr-15 lg:mr-0">
-          <h1 className="font-tan text-[2.3rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[8rem] xl:text-[11.5rem] leading-tight">
+          <h1 className="font-tan text-[2.5rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[7rem] xl:text-[11rem] leading-tight">
             Hi, I'm Negin
           </h1>
         </div>
 
         {/* Image and subtitle container */}
-        <div className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-5 mt-0 md:mt-[50px] lg:mt-8 mr-15 lg:mr-0 lg:mt-8">
+        <div className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-5 mt-0 md:mt-[20px] lg:mt-8 mr-15 lg:mr-0 lg:mt-8">
           {/* Subtitle section - appears below title on mobile, on right side in desktop */}
           <div className="col-span-4 order-1 md:order-2 md:col-span-3 lg:col-span-5 lg:col-start-7 flex flex-col justify-center text-right mb-8 md:mb-0">
             <h2 className="text-lg sm:text-xl md:text-2xl text-[#493B32] xl:text-3xl font-open">
