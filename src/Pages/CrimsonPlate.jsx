@@ -15,15 +15,15 @@ const CrimsonPlate = () => {
       <div className="absolute right-10 top-0 bottom-8 h-[calc(100%-5rem)] w-[2px] bg-[#493b32]"></div>
 
       {/* Project Title */}
-      <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 flex flex-row items-start justify-start gap-1 pl-20">
-        <div className="w-[5vh] sm:w-[5vh] md:w-[7vh] h-[2px] bg-[#493B32] mt-4"></div>
-        <h1 className="text-4xl sm:text-5xl font-tan text-[#493B32] mb-12">
+      <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 flex flex-row items-start justify-start gap-1 px-20 pt-15 sm:pt-25 lg:pt-0">
+        <div className="w-[4vh] sm:w-[5vh] md:w-[7vh] h-[2px] bg-[#493B32] mt-4"></div>
+        <h1 className="text-2xl sm:text-5xl font-tan text-[#493B32] mb-12">
           Crimson Plate
         </h1>
       </div>
 
       {/* Project Content */}
-      <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 pl-20">
+      <div className="col-span-4 col-start-1 sm:col-span-4 sm:col-start-1 md:col-span-6 lg:col-span-10 lg:col-start-2 pl-20">
         {/* Project Preview */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           {/* Image Section */}
@@ -115,7 +115,10 @@ const CrimsonPlate = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {/* JavaScript Libraries */}
           <section>
-            <h2 className="text-3xl font-tan text-[#493B32] mb-6">JavaScript Libraries</h2>
+            <div className="flex flex-row items-center gap-2">
+          <div className="w-[3vh] sm:w-[3vh] md:w-[4vh] h-[2px] bg-[#493B32] mt-0 mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl font-tan text-[#493B32] mb-6">JavaScript Libraries</h2>
+            </div>
             <ul className="space-y-4 text-[#493B32]">
               <li>
                 <strong>AOS (Animate on Scroll)</strong> – JavaScript library for
@@ -134,7 +137,10 @@ const CrimsonPlate = () => {
 
           {/* jQuery Plugins */}
           <section>
-            <h2 className="text-3xl font-tan text-[#493B32] mb-6">jQuery Plugins</h2>
+          <div className="flex flex-row items-center gap-2">
+          <div className="w-[3vh] sm:w-[3vh] md:w-[4vh] h-[2px] bg-[#493B32] mt-0 mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl font-tan text-[#493B32] mb-6">jQuery Plugins</h2>
+            </div>
             <ul className="space-y-4 text-[#493B32]">
               <li>
                 <strong>Magnific Popup</strong> – jQuery plugin for creating
@@ -163,13 +169,13 @@ const CrimsonPlate = () => {
         </section>
       </div>
        {/* Back to Resume Link */}
-       <div className=" col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-0">
-        <div className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20">
-          <IoIosArrowRoundBack size={48} color="#493B32" className="my-4" />
+       <div className="col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-0">
+        <Link to="/projects" className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20 hover:opacity-80 transition-opacity">
+          <IoIosArrowRoundBack size={42} color="#493B32" className="my-4" />
           <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">
-            Resume
+            Projects
           </p>
-        </div>
+        </Link>
         <div>
           <IoIosArrowDropupCircle
             size={40}

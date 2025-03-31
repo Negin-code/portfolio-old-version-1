@@ -210,25 +210,24 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Navigation Controls */}
-          <div className="col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-8">
-            <Link 
-              to="/projects" 
-              className="flex items-center gap-2 mx-10 lg:mx-[-30px] cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              <IoIosArrowRoundBack size={48} color="#493B32" className="my-4" />
-              <p className="font-open font-semibold text-2xl">Projects</p>
-            </Link>
-            <div>
+         {/* Back to Resume Link */}
+       <div className="col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-0">
+        <Link to="/projects" className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20 hover:opacity-80 transition-opacity">
+          <IoIosArrowRoundBack size={42} color="#493B32" className="my-4" />
+          <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">
+            Projects
+          </p>
+        </Link>
+        <div>
           <IoIosArrowDropupCircle
-            size={36}
+            size={40}
             color="#493B32"
             className="mx-20 my-10 mb-10 lg:mx-10 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             aria-label="Scroll to top"
           />
         </div>
+    
           </div>
         </section>
       </section>
