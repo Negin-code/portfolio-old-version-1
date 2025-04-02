@@ -78,7 +78,7 @@ const About = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-500 ease-in-out
+              className={`absolute inset-0 transition-all duration-500  ease-in-out
                 ${index === activeIndex ? 'opacity-100 translate-x-0' : 
                   index < activeIndex ? 'opacity-0 -translate-x-full' : 
                   'opacity-0 translate-x-full'}`}
@@ -224,7 +224,7 @@ const About = () => {
             <IoIosArrowRoundBack size={48} color="#493B32" className="my-4" />
             <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">Projects</p>
           </div>
-          <div className="mx-20 my-10 mb-10 md:mx-20 lg:mx-10 lg:my-20 lg:mb-20">
+          <div className="mx-0 sm:mx-20 my-10 mb-10 md:mx-20 lg:mx-10 lg:my-20 lg:mb-20">
             <IoIosArrowDropupCircle
               size={32}
               color="#493B32"

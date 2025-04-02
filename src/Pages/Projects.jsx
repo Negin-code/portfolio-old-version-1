@@ -25,26 +25,26 @@ const Projects = () => {
       </div>
      
       {/* Front End Section */}
-      <section className="col-span-4 sm:col-span-4 sm:col-start-1 md:col-span-6 md:col-start-1 lg:col-span-10 lg:col-start-2 col-start-1 mb-12 pl-20 mt-0">
+      <section className="col-span-4 sm:col-span-4 sm:col-start-1 md:col-span-6 md:col-start-1 lg:col-span-10 lg:col-start-2 col-start-1 mb-12 pl-10 sm:pl-20 mt-0 mr-12 sm:mr-0">
         {/* Project 1 - Image on left, content on right */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
           <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-7 lg:mt-4 order-1 md:order-1">
             <img
               src={CrimsonPlateImage}
               alt="Crimson Plate Website"
-              className="w-full object-cover scale-80 md:scale-90 lg:scale-80  mx-5"
+              className="w-full object-cover scale-80 md:scale-90 lg:scale-80 mx-5"
             />
           </div>
-          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-start-9 lg:col-span-4 mt-10 md:mt-20 order-6 md:order-2 ml-10 lg:ml-0">
-            <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
+          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-start-9 lg:col-span-4 mt-5 md:mt-20 order-6 md:order-2 ml-10 lg:ml-0">
+            <span className="bg-[#5E3F27] text-[#FFF7F2] text-md sm:text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Front-end
             </span>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <h3 className="text-xl font-semibold text-[#493B32]">
+            <h3 className="text-md sm:text-xl font-semibold text-[#493B32]">
               Crimson Plate Website
             </h3>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <p className="text-[#493B32] leading-relaxed">
+            <p className="text-[#493B32] text-base sm:text-lg leading-relaxed">
               The goal was to create a responsive, visually engaging, and
               user-friendly restaurant website that delivers an intuitive,
               interactive digital experience while accurately reflecting the
@@ -78,15 +78,15 @@ const Projects = () => {
         {/* Project 2 - Content on left, image on right (reversed on mobile) */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
           <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-7 lg:mt-4 lg:col-start-1 lg:col-span-4 mt-10 md:mt-20 order-4 md:order-1 ml-10 lg:ml-0">
-            <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
+            <span className="bg-[#5E3F27] text-[#FFF7F2] text-md sm:text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               UX/UI Design
             </span>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <h3 className="text-xl font-semibold text-[#493B32]">
+            <h3 className="text-md sm:text-xl font-semibold text-[#493B32]">
               AlzCare App
             </h3>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <p className="text-[#493B32] leading-relaxed">
+            <p className="text-[#493B32] text-base sm:text-lg leading-relaxed">
               The goal of AlzCare is to create a user-friendly mobile app 
               that integrates with a smart medication container, helping 
               caregivers monitor medication adherence for individuals 
@@ -126,19 +126,19 @@ const Projects = () => {
             <img
               src={CrimsonPlateImage}
               alt="Listening Lab"
-              className="w-full object-cover scale-80"
+              className="w-full object-cover scale-80 mx-5"
             />
           </div>
           <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-start-9 lg:col-span-4 mt-10 md:mt-20 order-6 md:order-2 ml-10 lg:ml-0">
-            <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
+            <span className="bg-[#5E3F27] text-[#FFF7F2] text-md sm:text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Service Design
             </span>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <h3 className="text-xl font-semibold text-[#493B32]">
+            <h3 className="text-md sm:text-xl font-semibold text-[#493B32]">
               Listening Lab
             </h3>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <p className="text-[#493B32] leading-relaxed">
+            <p className="text-[#493B32] text-base sm:text-lg leading-relaxed">
               The goal of the Listening Lab was to 
               enhance the effectiveness of listening 
               practices within the immigrant services 
@@ -172,15 +172,15 @@ const Projects = () => {
         {/* Project 4 - Content on left, image on right (reversed on mobile) */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4">
           <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-start-1 lg:col-span-6 mt-10 md:mt-20 order-8 md:order-1 ml-10 lg:ml-0">
-            <span className="bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
+            <span className="bg-[#5E3F27] text-[#FFF7F2] text-md sm:text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Service Design
             </span>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <h3 className="text-xl font-semibold text-[#493B32]">
+            <h3 className="text-md sm:text-xl font-semibold text-[#493B32]">
               Evaluating Culture Café Program
             </h3>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
-            <p className="text-[#493B32] leading-relaxed">
+            <p className="text-[#493B32] text-base sm:text-lg leading-relaxed">
               To evaluate the Culture Café program, identify areas for 
               improvement, and propose actionable solutions to 
               enhance participants' experience. The evaluation focused 
@@ -215,22 +215,22 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Back to Resume Link */}
-      <div className=" col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-0">
-        <div className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20">
-          <IoIosArrowRoundBack size={48} color="#493B32" className="my-4" />
-          <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">
-            Resume
-          </p>
-        </div>
-        <div>
-          <IoIosArrowDropupCircle
-            size={40}
-            color="#493B32"
-            className="mx-20 my-10 mb-10 lg:mx-10 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
-            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-            aria-label="Scroll to top"
-          />
+     {/* Back to Projects Link */}
+     <div className="col-span-full grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4">
+        <div className="col-span-3 col-start-1 md:col-span-6 md:col-start-1 lg:col-span-10 lg:col-start-2 flex justify-between items-center mt-8">
+          <div className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20">
+            <IoIosArrowRoundBack size={48} color="#493B32" className="my-4" />
+            <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">Resume</p>
+          </div>
+          <div className="mx-0 sm:mx-20 my-10 mb-10 md:mx-20 lg:mx-10 lg:my-20 lg:mb-20">
+            <IoIosArrowDropupCircle
+              size={32}
+              color="#493B32"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+              aria-label="Scroll to top"
+            />
+          </div>
         </div>
       </div>
     </main>

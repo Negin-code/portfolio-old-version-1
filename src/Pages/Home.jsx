@@ -54,7 +54,7 @@ const Home = () => {
       <section className="col-span-full grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
         {/* Title section - full width */}
         <div className="col-span-4 md:col-span-6 lg:col-span-11 text-right mt-20 mr-15 lg:mr-0">
-          <h1 className="font-tan text-[2.5rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[7rem] xl:text-[11rem] leading-tight">
+          <h1 className="font-tan text-[2.2rem] sm:text-[4.5rem] md:text-[6rem] lg:text-[7rem] xl:text-[11rem] leading-tight">
             Hi, I'm Negin
           </h1>
         </div>
@@ -82,7 +82,7 @@ const Home = () => {
           </div>
           
           {/* Image section - below subheading on mobile, on left side in desktop */}
-          <div className="col-span-4 order-2 md:order-1 md:col-span-3 lg:col-span-5 lg:col-start-2 flex flex-row justify-center md:justify-start items-center gap-4">
+          <div className="col-span-4 order-2 ml-10 sm:ml-0 md:order-1 md:col-span-3 lg:col-span-5 lg:col-start-2 flex flex-row justify-center md:justify-start items-center gap-4">
             <img
               src={profileImage}
               alt="Negin's Profile Picture"
@@ -211,8 +211,8 @@ const Home = () => {
           </div>
 
          {/* Back to Resume Link */}
-       <div className="col-span-8 md:col-span-10 lg:col-start-2 col-start-1 flex justify-between items-center mt-0">
-        <Link to="/projects" className="flex items-center gap-2 mx-20 lg:mx-10 lg:my-20 lg:mb-20 hover:opacity-80 transition-opacity">
+       <div className="col-span-8 md:col-span-10 lg:col-start-1 col-start-1 flex justify-between items-center mt-0">
+        <Link to="/projects" className="flex items-center gap-2 mx-[2rem] lg:mx-10 lg:my-20 lg:mb-20 hover:opacity-80 transition-opacity">
           <IoIosArrowRoundBack size={42} color="#493B32" className="my-4" />
           <p className="font-open font-semibold text-xl lg:text-2xl text-[#493B32]">
             Projects
@@ -222,7 +222,7 @@ const Home = () => {
           <IoIosArrowDropupCircle
             size={40}
             color="#493B32"
-            className="mx-20 my-10 mb-10 lg:mx-10 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
+            className="mx-[2rem] my-10 mb-10 lg:mx-10 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             aria-label="Scroll to top"
           />
