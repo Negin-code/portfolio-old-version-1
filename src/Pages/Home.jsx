@@ -222,7 +222,7 @@ const Home = () => {
           <IoIosArrowDropupCircle
             size={40}
             color="#493B32"
-            className="mx-[2rem] my-10 mb-10 lg:mx-10 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
+            className="mx-[2rem] my-10 mb-10 lg:mx-0 lg:pr-0 lg:my-20 lg:mb-20 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             aria-label="Scroll to top"
           />
