@@ -7,6 +7,10 @@ import { SiFigma } from "react-icons/si";
 import AlzCareImage from "../assets/AlzCare.svg";
 import DesignProcess from "../assets/designProcess.svg";
 import UserPersona from "../assets/userpersona.svg";
+import CompetitorAnalysis from "../assets/competitive.svg";
+import JourneyMap from "../assets/journeymap.svg";
+import UserFlow from "../assets/userflow.svg";
+
 const AlzCare = () => {
   return (
     <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative overflow-hidden">
@@ -136,13 +140,64 @@ const AlzCare = () => {
             </div>
           </div>
         </section>
-        {/* Accessibility Note */}
+
+        {/* Competitor Analysis Section */}
+        <section className="mb-16">
+          <div className="flex flex-row items-center gap-2">
+            <div className="w-[3vh] sm:w-[3vh] md:w-[4vh] h-[2px] bg-[#493B32] mt-0 mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl font-tan text-[#493B32] mb-6">Competitive Analyze</h2>
+          </div>
+          <div className="flex justify-center mt-8">
+            <div className="bg-[#FFF7F2] border border-[#493B32] p-4 rounded-md shadow-sm max-w-3xl w-full">
+              <img 
+                src={CompetitorAnalysis} 
+                alt="Competitor Analysis" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Journey Map Section */}
+        <section className="mb-16">
+          <div className="flex flex-row items-center gap-2">
+            <div className="w-[3vh] sm:w-[3vh] md:w-[4vh] h-[2px] bg-[#493B32] mt-0 mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl font-tan text-[#493B32] mb-6">Journey Map</h2>
+          </div>
+          <div className="flex justify-center mt-8">
+            <div className="bg-[#FFF7F2] border border-[#493B32] p-4 rounded-md shadow-sm max-w-3xl w-full">
+              <img 
+                src={JourneyMap} 
+                alt="Journey Map" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* User Flow Section */}
+
+        <section className="mb-16">
+          <div className="flex flex-row items-center gap-2">
+            <div className="w-[3vh] sm:w-[3vh] md:w-[4vh] h-[2px] bg-[#493B32] mt-0 mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl font-tan text-[#493B32] mb-6">User Flow</h2>
+          </div>
+          <div className="flex justify-center mt-8">
+            <div className="bg-[#FFF7F2] border border-[#493B32] p-4 rounded-md shadow-sm max-w-3xl w-full">
+              <img 
+                src={UserFlow} 
+                alt="User Flow" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </section>
+
+        
         <section className="mb-16">
           <p className="text-[#493B32]">
-            Beyond functionality, I prioritized accessibility and performance. I applied ARIA labels,
-            semantic HTML, and WCAG-compliant color contrasts to ensure inclusivity for all users,
-            including those using assistive technologies. To optimize load times, I compressed images
-            and leveraged lazy loading to reduce initial page weight.
+          In the ideation and wireframing phase, I structured the information architecture to ensure a clear and logical navigation flow. Using Figma, I created low-fidelity wireframes to map out key screens such as the Dashboard, Medication Management,
+          Location Tracking, and Notifications. The design prioritized ease of use, ensuring that caregivers could quickly access critical information with minimal steps. Usability testing with caregivers led to key refinements such as enhancing safe zone indicators, and an easy and accessible take an action button. Ultimately making AlzCare a reliable tool for proactive caregiving and patient well-being.
           </p>
         </section>
       </div>
