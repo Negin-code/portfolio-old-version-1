@@ -34,7 +34,7 @@ const Home = () => {
             <FaLinkedin size={32} />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:iamneginasem@gmail.com"
             className="transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-120"
           >
             <MdEmail size={32}/>

@@ -71,7 +71,7 @@ const CrimsonPlate = () => {
             {/* Links */}
             <div className="flex gap-4 pt-4">
               <a
-                href="https://github.com/yourusername/crimson-plate"
+                href="https://github.com/Negin-code/crimson-plate-restaurant.git"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-[#493B32] hover:text-[#5E3F27]"
@@ -80,7 +80,7 @@ const CrimsonPlate = () => {
                 Github
               </a>
               <a
-                href="https://crimson-plate.com"
+                href="https://crimsonplate.neginasem.ca/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-[#493B32] hover:text-[#5E3F27]"
