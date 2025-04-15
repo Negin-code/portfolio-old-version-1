@@ -63,12 +63,12 @@ const ListeningLab = () => {
   }, []);
 
   return (
-    <main className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative overflow-hidden">
+    <main id="top" className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4 min-h-screen bg-[#FFF7F2] pt-20 lg:pt-50 lg:px-0 md:px-8 relative overflow-hidden">
       {/* Left vertical line */}
-      <div className="absolute left-17 md:left-20 top-0 bottom-8 h-[calc(100%-5rem)] w-[2px] bg-[#493b32]"></div>
+      <div className="absolute left-17 md:left-20 top-0 bottom-8 h-[calc(100%-10rem)] w-[2px] bg-[#493b32]"></div>
 
       {/* Right border line */}
-      <div className="absolute right-10 top-0 bottom-8 h-[calc(100%-5rem)] w-[2px] bg-[#493b32]"></div>
+      <div className="absolute right-10 top-0 bottom-8 h-[calc(100%-10rem)] w-[2px] bg-[#493b32]"></div>
 
       {/* Project Title */}
       <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-10 lg:col-start-2 flex flex-row items-start justify-start gap-1 px-20 pt-15 sm:pt-25 lg:pt-0">

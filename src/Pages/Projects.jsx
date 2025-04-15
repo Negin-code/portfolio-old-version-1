@@ -70,7 +70,7 @@ const Projects = () => {
             
             {/* View Project Button */}
             <Link
-              to="/projects/crimson-plate"
+              to="/projects/crimson-plate#top"
               className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
             >
               View Project
@@ -108,7 +108,7 @@ const Projects = () => {
             
             {/* View Project Button */}
             <Link
-              to="/projects/alzcare"
+              to="/projects/alzcare#top"
               className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
             >
               View Project
@@ -164,7 +164,7 @@ const Projects = () => {
             
             {/* View Project Button */}
             <Link
-              to="/projects/listening-lab"
+              to="/projects/listening-lab#top"
               className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
             >
               View Project
@@ -202,7 +202,7 @@ const Projects = () => {
             
             {/* View Project Button */}
             <Link
-              to="/projects/culture-cafe"
+              to="/projects/culture-cafe#top"
               className="inline-block w-full text-center mt-6 lg:mt-8 py-2 px-4 bg-[#5E3F27] hover:bg-[#493B32] text-[#FFF7F2] font-semibold rounded-sm transition duration-300"
             >
               View Project

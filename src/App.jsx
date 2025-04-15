@@ -7,6 +7,7 @@ import Projects from './Pages/Projects';
 import CrimsonPlate from './Pages/CrimsonPlate';
 import AlzCare from './Pages/AlzCare';
 import ListeningLab from './Pages/ListeningLab';
+import CultureCafe from './Pages/CultureCafe';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects/crimson-plate" element={<CrimsonPlate />} />
         <Route path="/projects/alzcare" element={<AlzCare />} />
         <Route path="/projects/listening-lab" element={<ListeningLab />} />
+        <Route path="/projects/culture-cafe" element={<CultureCafe />} />
         <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Route>
     </Routes>
