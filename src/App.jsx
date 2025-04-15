@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import CrimsonPlate from './Pages/CrimsonPlate';
 import AlzCare from './Pages/AlzCare';
+import ListeningLab from './Pages/ListeningLab';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/crimson-plate" element={<CrimsonPlate />} />
         <Route path="/projects/alzcare" element={<AlzCare />} />
+        <Route path="/projects/listening-lab" element={<ListeningLab />} />
         <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Route>
     </Routes>

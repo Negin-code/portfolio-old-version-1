@@ -4,6 +4,9 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import CrimsonPlateImage from "../assets/CrimsonPlate.png";
 import AlzcareImage from "../assets/Alzcare.svg";
+import ListeningLabImage from "../assets/LLCover.png";
+import CultureCafeImage from "../assets/CCCover.png";
+
 
 
 
@@ -124,7 +127,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4 mb-20">
           <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-7 lg:mt-4 order-5 md:order-1">
             <img
-              src={CrimsonPlateImage}
+              src={ListeningLabImage}
               alt="Listening Lab"
               className="w-full object-cover scale-80 mx-5"
             />
@@ -171,7 +174,7 @@ const Projects = () => {
 
         {/* Project 4 - Content on left, image on right (reversed on mobile) */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-12 lg:gap-4">
-          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-start-1 lg:col-span-6 mt-10 md:mt-20 order-8 md:order-1 ml-10 lg:ml-0">
+          <div className="col-span-4 sm:col-span-4 md:col-span-6 lg:col-span-7 lg:mt-4 lg:col-start-1 lg:col-span-4 mt-10 md:mt-20 order-8 md:order-1 ml-10 lg:ml-0">
             <span className="bg-[#5E3F27] text-[#FFF7F2] text-md sm:text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Service Design
             </span>
@@ -181,7 +184,7 @@ const Projects = () => {
             </h3>
             <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
             <p className="text-[#493B32] text-base sm:text-lg leading-relaxed">
-              To evaluate the Culture Café program, identify areas for 
+              The goal was to evaluate the Culture Café program, identify areas for 
               improvement, and propose actionable solutions to 
               enhance participants' experience. The evaluation focused 
               on understanding participants' experiences.
@@ -205,11 +208,11 @@ const Projects = () => {
               View Project
             </Link>
           </div>
-          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-10 order-7 md:order-2">
+          <div className="col-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 lg:col-start-9 lg:mt-0 order-7 md:order-2 ">
             <img
-              src={CrimsonPlateImage}
+              src={CultureCafeImage}
               alt="Culture Café Program"
-              className="w-full object-cover lg:scale-110 scale-90 lg:mt-20"
+              className="w-full object-cover lg:scale-120 scale-85 mx-5 lg:mt-20"
             />
           </div>
         </div>
