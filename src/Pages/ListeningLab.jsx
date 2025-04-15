@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt, FaHeadphones, FaComments, FaMicrophone } from "react-icons/fa";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdOutlineSchool, MdLightbulb } from "react-icons/md";
 import ListeningLab01 from "../assets/LL01-1.jpeg";
 import ListeningLab02 from "../assets/LL01-2.jpeg";
 import ListeningLab03 from "../assets/LL02-1.jpeg";
+import ListeningLab04 from "../assets/LLCover.png";
+
+
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -28,6 +30,7 @@ import 'swiper/css/pagination';
 const ListeningLab = () => {
   // Sample images for the slider - replace with your actual project images
   const sliderImages = [
+    { src: ListeningLab04, alt: "Listening Lab Cover" },
     { src: ListeningLab01, alt: "Listening Lab Preview 1" },
     { src: ListeningLab02, alt: "Listening Lab Preview 2" }, 
     { src: ListeningLab03, alt: "Listening Lab Preview 3" },
@@ -164,17 +167,15 @@ const ListeningLab = () => {
 
           {/* Project Info Section */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-block px-3 py-1 bg-[#5E3F27] text-[#FFF7F2] text-lg font-medium rounded-sm">
+            <div className="bg-[#5E3F27] text-[#FFF7F2] text-md sm:text-lg font-medium rounded-sm px-4 py-1 mb-4 w-fit flex justify-start items-start">
               Service Design
             </div>
-
-            <div className="w-full h-[1px] bg-[#493B32]"></div>
-
-            <h2 className="text-2xl font-semibold text-[#493B32]">
+            <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
+            <h3 className="text-md sm:text-xl font-semibold text-[#493B32] mb-4">
               Listening Lab
-            </h2>
-
-            <div className="w-full h-[1px] bg-[#493B32]"></div>
+            </h3>
+            <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
+           
 
             <p className="text-[#493B32] leading-relaxed">
               The goal of the Listening Lab was to enhance the effectiveness of
@@ -182,10 +183,10 @@ const ListeningLab = () => {
               fostering trust, cultural understanding, and empathy.
             </p>
 
-            <div className="w-full h-[1px] bg-[#493B32]"></div>
+            <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
 
             {/* Tech Stack */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mt-4 text-[#493B32]">
               <span className="border border-[#493B32] px-3 py-1 text-[#493B32]">
                 Zoom
               </span>
@@ -197,7 +198,7 @@ const ListeningLab = () => {
               </span>
             </div>
 
-            <div className="w-full h-[1px] bg-[#493B32]"></div>
+            <div className="w-full h-[1px] bg-[#493B32] mb-[10px] mt-[10px]"></div>
 
             {/* Links */}
             
