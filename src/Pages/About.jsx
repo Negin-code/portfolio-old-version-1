@@ -1,60 +1,42 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { IoArrowForward } from "react-icons/io5";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import NeginImage1 from "../assets/malahat.png";
-import NeginImage2 from "../assets/merchies.png";
+
 import NeginImage3 from "../assets/malahat.png";
 import NeginImage4 from "../assets/malahat.png";
 import NeginImage5 from "../assets/malahat.png";
+// Import Swiper components and styles
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 // Trigger test
 
 const About = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
+  const swiperRef = useRef(null);
   
   const slides = [
     NeginImage1,
-    NeginImage2,
     NeginImage3,
     NeginImage4,
     NeginImage5
   ];
 
-  const nextSlide = useCallback(() => {
-    setActiveIndex((current) => (current + 1) % slides.length);
-  }, []);
-
-  const prevSlide = useCallback(() => {
-    setActiveIndex((current) => (current - 1 + slides.length) % slides.length);
-  }, []);
-
-  // Auto-advance slides
-  useEffect(() => {
-    const timer = setInterval(() => {
-      nextSlide();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [nextSlide]);
-
-  // Handle touch events
-  const handleTouchStart = (e) => {
-    setTouchStart(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEnd(e.touches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 100) {
-      nextSlide();
+  // Navigation functions
+  const goPrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
     }
-    if (touchStart - touchEnd < -100) {
-      prevSlide();
+  };
+
+  const goNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
     }
   };
 
@@ -69,40 +51,82 @@ const About = () => {
       {/* Main content grid */}
       <section className="col-span-full grid grid-cols-5 md:grid-cols-6 lg:grid-cols-12 gap-4">
         {/* Profile Image Gallery */}
-        <div 
-          className="col-span-4 col-start-1 md:col-span-4 md:col-start-2 lg:col-span-8 lg:col-start-3 w-[320px] mx-25 my-10 lg:mx-0 lg:w-full h-[500px] relative bg-black rounded-lg overflow-hidden"
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-all duration-500  ease-in-out
-                ${index === activeIndex ? 'opacity-100 translate-x-0' : 
-                  index < activeIndex ? 'opacity-0 -translate-x-full' : 
-                  'opacity-0 translate-x-full'}`}
+        <div className="col-span-4 col-start-1 md:col-span-4 md:col-start-2 lg:col-span-8 lg:col-start-3 w-[320px] mx-25 my-10 lg:mx-0 lg:w-full relative">
+          <div className="rounded-md overflow-hidden bg-[#FFF7F2] relative h-[500px]">
+            {/* Custom navigation buttons */}
+            <button 
+              onClick={goPrev}
+              className="absolute left-2 top-1/2 z-20 -translate-y-1/2 w-8 h-8 bg-[#FFF7F2] text-[#493B32] rounded-full flex items-center justify-center border border-[#493B32] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              aria-label="Previous slide"
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-              <img
-                src={slide}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-          
-          {/* Navigation dots */}
-          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-300 
-                  ${index === activeIndex ? 'bg-[#F75590]' : 'bg-white/50'}`}
-                onClick={() => setActiveIndex(index)}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
+              <BsArrowLeft className="w-4 h-4" />
+            </button>
+            
+            <button 
+              onClick={goNext}
+              className="absolute right-2 top-1/2 z-20 -translate-y-1/2 w-8 h-8 bg-[#FFF7F2] text-[#493B32] rounded-full flex items-center justify-center border border-[#493B32] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              aria-label="Next slide"
+            >
+              <BsArrowRight className="w-4 h-4" />
+            </button>
+            
+            <Swiper
+              ref={swiperRef}
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={0}
+              slidesPerView={1}
+              pagination={{ 
+                clickable: true,
+                bulletClass: 'swiper-bullet',
+                bulletActiveClass: 'swiper-bullet-active',
+                horizontalClass: 'swiper-pagination-custom'
+              }}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              className="group h-full pb-10"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index} className="relative h-full">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                  <img
+                    src={slide}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Custom Swiper styles */}
+            <style>
+              {`
+                .swiper-bullet {
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ccc;
+                  border-radius: 50%;
+                  display: inline-block;
+                  margin: 0 8px;
+                  cursor: pointer;
+                  transition: all 0.3s;
+                }
+                .swiper-bullet-active {
+                  background-color: #E77B43;
+                  transform: scale(1.2);
+                }
+                .swiper-pagination-custom {
+                  position: absolute;
+                  bottom: 10px;
+                  left: 0;
+                  right: 0;
+                  text-align: center;
+                  z-index: 10;
+                }
+              `}
+            </style>
           </div>
         </div>
 
